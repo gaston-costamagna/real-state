@@ -17,7 +17,7 @@ const toggle = () => {
 
   return (
   <>
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <GlobalStyle />
     <Navbar toggle={toggle} />
     <Dropdown isOpen={isOpen} toggle={toggle}/>
